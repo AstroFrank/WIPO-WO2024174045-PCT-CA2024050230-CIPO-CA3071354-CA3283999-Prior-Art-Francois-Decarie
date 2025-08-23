@@ -7,7 +7,7 @@ François Decarie is a PhD student at the University of Manitoba, after serving 
 Unbeknownst to François until recently August 2025, Dr. Grant had previously filed a patent application CA3071354 in 2018 with claims that have since been abandoned. <a href="https://cipo.ic.gc.ca/opic-cipo/cpd/eng/patent/3071354/summary.html?query=charles+grant&type=basic_search"> Abandoned CIPO Application. </a>
 
 Previous Claims:
-From Previous application:"2D images and Algorithms for Predicting Carcass Lean Yields for Live Feeder Pigs and for Body Condition Scoring Breeder Sows
+From Previous application: "2D images and Algorithms for Predicting Carcass Lean Yields for Live Feeder Pigs and for Body Condition Scoring Breeder Sows
 Claims
 
 A system and method of using 2D images of live feeder pigs and algorithms to predict carcass lean yields to allow adjustments in rations to optimize carcass lean yield.
@@ -22,7 +22,7 @@ Dr. Grant's background is in agricultural business, actuarial accounting, insura
 
 Following approximately one year of work, on late January 2022, François provided a demonstration of his work to Dr. Grant and Dr. Grant's business partner in Niverville, Mb. The demonstration was well received, as noted in the chat messages. Dr. Grant and his business partner, based on the results of François' demonstration, incorporated a company on February 21, 2023, called Moccus Maximus, Inc. Two days later, on February 23, 2023, Moccus Maximus filed a patent priority document. 
 
-The video of the demo is here; you'll note that Dr Grant was assisting the demo by holding the pig cut out, the voice explaining what the system does is that of François Decarie, who was filming and operating the station control.
+The videos of the demo are <a href="https://astrofrank.github.io/WIPO-WO2024174045-PCT-CA2024050230-CIPO-CA3071354-Prior-Art-Francois-Decarie/demo1.mp4"> here </a> and <a href="https://astrofrank.github.io/WIPO-WO2024174045-PCT-CA2024050230-CIPO-CA3071354-Prior-Art-Francois-Decarie/demo_run.mp4"> here; </a> you'll note that Dr Grant was assisting the demo by holding the pig cut out, the voice explaining what the system does is that of François Decarie, who was filming and operating the station control.
 
 Later, after priority but before filing, in pursuing further invention definition, Dr. Grant required François to provide all technical details, notably Figures 7 and 8 of the patent application, to the patent agent, Mr. John Orange. The technical wording in the patent is nearly verbatim to what François provided to Mr. Orange.
 
