@@ -1,0 +1,201 @@
+Delivered-To: frank.decarie@gmail.com
+Received: by 2002:a59:cb8e:0:b0:452:b2d1:c94e with SMTP id d14csp360394vqv;
+        Thu, 22 Feb 2024 07:28:11 -0800 (PST)
+X-Forwarded-Encrypted: i=2; AJvYcCUY9JK5Fx/8gnzBAW6SQezmzDc/o5+r7AwxdD2YWBMnD6HbctbHoHO1EFC3Ib/Ts+8ZUJlazmIrMAN9CVriI2YhEJGDSaxa3Q==
+X-Google-Smtp-Source: AGHT+IEER6/5EXGPkjOs0IUXEfcycwLa8/zFAg8Np7mge8MSiJ+Nw6OqDFaUV27HXdLzadajL45T
+X-Received: by 2002:a05:620a:b0c:b0:787:982a:e2c5 with SMTP id t12-20020a05620a0b0c00b00787982ae2c5mr2450268qkg.59.1708615691159;
+        Thu, 22 Feb 2024 07:28:11 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1708615691; cv=none;
+        d=google.com; s=arc-20160816;
+        b=tWEbypNR8gvU15ilKJAYSa0p2aetRjKKuU7XKoeSZstyufYeV0Uyd1sRbSRKis4xBe
+         b+RXdo5Q2rY9gT5SF17BMxiIffSDj7oHMBd1za4jOXVf/tB7nBbo+hsN+j3ZutbGavXz
+         q4PhML8i865Sjj+sjbvr+09+CR83ufQMLHpUT1fZid01xo3n95nBj1ZqcgK1+5l/ebCV
+         ydydqB7BtOM9xqkuUWHqketRJBHKb4KL5bE9ENFAJxXj5aCyzVasNvaZ92L8XzxGmf+A
+         KIwhv4/TSwEBdLXaHkLHwc8koDAAKTa8ujvWrkftjR0ucJ1tAlk1Ji05dmppe0vf0Txu
+         2D2Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :in-reply-to:references:to:from:dkim-signature;
+        bh=9hlScyBoCR+k056QUFqQP6+NymPLBWrBLyakrsINHBs=;
+        fh=QMOJ4Th0avNXegtaTVy08yyB6IEEPg4BYGQamHrXgXo=;
+        b=NGL6zhlMyO73wE6R8qCL9HxEsaQ1ev8n2UzOG3z1mGaoeVlr0H2fr/z1nC+eTbTob3
+         sxBUB9clmFQZ/joGvq2gu68sU4ifj4a1Ai09q8dq7vWoUjkGTILNUWzVrrBLvLM9s0am
+         DYH7G1N8rmNZ99e8ajpNNpMTw8lTc0xMZoQw5UVgjLUC6IBxmUyxy+Qy6WRSt4QDrpqH
+         sRdEumd2AArXMENyjyeWf0YjXz+jDuhiSEvsJesC+004qBpVut8DtjIt18sm05rAgvpX
+         Bewj32SfnNWDcwT/LUBLru/a5hcT5wf43owx1EiW/H1Ow6ohVbWcgxcgbpBwaU/dvt5E
+         UoJg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass (test mode) header.i=@sympatico.ca header.s=selector1 header.b=HK19BzoM;
+       spf=pass (google.com: domain of johnorange@sympatico.ca designates 209.71.208.13 as permitted sender) smtp.mailfrom=johnorange@sympatico.ca
+Return-Path: <johnorange@sympatico.ca>
+Received: from cmx-mtlrgo002.bell.net (mta-mtl-003.bell.net. [209.71.208.13])
+        by mx.google.com with ESMTPS id q24-20020a05620a0c9800b00787a074f1dcsi1209751qki.775.2024.02.22.07.28.11
+        for <frank.decarie@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 22 Feb 2024 07:28:11 -0800 (PST)
+Received-SPF: pass (google.com: domain of johnorange@sympatico.ca designates 209.71.208.13 as permitted sender) client-ip=209.71.208.13;
+Authentication-Results: mx.google.com;
+       dkim=pass (test mode) header.i=@sympatico.ca header.s=selector1 header.b=HK19BzoM;
+       spf=pass (google.com: domain of johnorange@sympatico.ca designates 209.71.208.13 as permitted sender) smtp.mailfrom=johnorange@sympatico.ca
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sympatico.ca; s=selector1; t=1708615691; 
+        bh=9hlScyBoCR+k056QUFqQP6+NymPLBWrBLyakrsINHBs=;
+        h=From:To:References:In-Reply-To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+        b=HK19BzoMaX1SQb7kWU7ABToeKPkH2TasZbEtF9nxjxeJzWJ2lmUim/5ucrz2+5IvUg0W6gsx9s8dxiT4WRp6S60rncblfao/vli+4tz66xLEscIU0E3jvAL3VwDqm4nZkmT+culpVJ+CptkohB6k8umCBYQQCZa7e6duSfDqy7B/s+VyQpCE3gofvQ0PY/xlt6YISUFb34rlvi/nCkkoxL+HUJbC9Lx60pOAPCEEDfTF5+T/qreT3SHtQRfZAfijn01rT8ys7bOJxrxPlW+8W1v/EPLiW9ZyHKhC9Jr9mqwn7umwGwgoWNtjJVEAK8aCFgfwXv+Wp0ejnIivo5FisA==
+X-RG-SOPHOS: Clean
+X-RG-VADE-SC: 0
+X-RG-VADE: Clean
+X-Originating-IP: [50.100.43.159]
+X-RG-Env-Sender: johnorange@sympatico.ca
+X-RG-Rigid: 65CA437000F54470
+X-RazorGate-Vade: gggruggvucftvghtrhhoucdtuddrgedvledrfeeggdejhecutefuodetggdotefrodftvfcurfhrohhfihhlvgemuceugffnnfdpqfgfvfenuceurghilhhouhhtmecufedtudenucesvcftvggtihhpihgvnhhtshculddquddttddmnecujfgurhephffvfhgjufffkfggtgfothesrgdtghepvddtudenucfhrhhomhepoehjohhhnhhorhgrnhhgvgesshihmhhprghtihgtohdrtggrqeenucggtffrrghtthgvrhhnpeeuffetueelteeuheelfeevueejhfeugfetffelvedutdekieetfefhkeefueegudenucfkphephedtrddutddtrdegfedrudehleenucevlhhushhtvghrufhiiigvpedtnecurfgrrhgrmhephhgvlhhopeffgffumffvqffrjfffieftsffpffdpihhnvghtpeehtddruddttddrgeefrdduheelpdhmrghilhhfrhhomhepjhhohhhnohhrrghnghgvsehshihmphgrthhitghordgtrgdpnhgspghrtghpthhtohepvddprhgtphhtthhopegthhgrrhhlvghsrdhgrhgrnhhtsegtfihgrhgrnhhtrdgtrgdprhgtphhtthhopehfrhgrnhhkrdguvggtrghrihgvsehgmhgrihhlrdgtohhmpdhrvghvkffrpegsrhgrshdqsggrshgvqdgsrghrihhonhdukeehtdifqdhgrhgtqdduuddtqdehtddquddttddqgeefqdduheelrdgushhlrdgsvghllhdrtggrpdgruhhthhgpuhhsvghrpehjohhhnhhorhgrnhhgvgesshihmhhprghtihgtohdrtggrpdhgvghokffrpeevtedpoffvtefjohhsthep
+	tghmgidqmhhtlhhrghhotddtvd
+X-RazorGate-Vade-Verdict: clean 0
+X-RazorGate-Vade-Classification: clean
+Received: from DESKTOPHD6RQND (50.100.43.159) by cmx-mtlrgo002.bell.net (5.8.814) (authenticated as johnorange@sympatico.ca)
+        id 65CA437000F54470; Thu, 22 Feb 2024 10:28:09 -0500
+From: <johnorange@sympatico.ca>
+To: <charles.grant@cwgrant.ca>,
+	=?iso-8859-1?Q?'Fran=E7ois_Decarie'?= <frank.decarie@gmail.com>
+References:
+In-Reply-To:
+Subject: RE: updated patent application
+Date: Thu, 22 Feb 2024 10:28:09 -0500
+Message-ID: <006101da65a3$bdb41020$391c3060$@sympatico.ca>
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0062_01DA6579.D4DE5640"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AQMkY60L601ltMwZ9fDOgDSbcPrwp66Cf2tA
+Content-Language: en-ca
+MIME-Version: 1.0
+
+------=_NextPart_000_0062_01DA6579.D4DE5640
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+I am available to discuss the draft when you are ready. I have a medical
+appointment that will take me out the house from 1:15 to 3pm. We have to
+have this done and in Anil=92s hands by end of day tomorrow, Friday.
+
+=20
+
+Call me when you are ready,
+
+=20
+
+Speak soon.
+
+=20
+
+From: johnorange@sympatico.ca <johnorange@sympatico.ca>=20
+Sent: Wednesday, February 21, 2024 2:42 PM
+To: 'charles.grant@cwgrant.ca' <charles.grant@cwgrant.ca>; 'Fran=E7ois
+Decarie' <frank.decarie@gmail.com>
+Subject: updated patent application
+
+=20
+
+Hi there, here is the updated patent application for your review and
+feedback.  The purpose of this is to describe to =93an unimaginative
+technician skilled in the art=94 how to implement your system. That is =
+why I
+have referenced certain source functions so there is sufficient guidance =
+to
+get the pieces needed to put the system together.
+
+=20
+
+I have tried to reconcile different terminology between for example fig =
+7, 8
+and the paper on the scale and have included items when in doubt so as =
+not
+to overlook them. An error is more readily seen than an omission.
+
+=20
+
+Can you review and then we can discuss and finalise. I am about tomorrow
+except for an early pm meeting.=20
+
+=20
+
+Regards
+
+
+------=_NextPart_000_0062_01DA6579.D4DE5640
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1"><meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)"=
+><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ligatures:standardcontextual;
+	mso-fareast-language:EN-US;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3D"EN-CA" link=3D"#0563=
+C1" vlink=3D"#954F72" style=3D"word-wrap:break-word"><div class=3D"WordSect=
+ion1"><p class=3D"MsoNormal">I am available to discuss the draft when you a=
+re ready. I have a medical appointment that will take me out the house from=
+ 1:15 to 3pm. We have to have this done and in Anil&#8217;s hands by end of=
+ day tomorrow, Friday.<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:=
+p></p><p class=3D"MsoNormal">Call me when you are ready,<o:p></o:p></p><p c=
+lass=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal">Speak soon.<=
+o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><div><div style=
+=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm 0cm 0cm"><=
+p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"mso-ligatures:none;m=
+so-fareast-language:EN-CA">From:</span></b><span lang=3D"EN-US" style=3D"ms=
+o-ligatures:none;mso-fareast-language:EN-CA"> johnorange@sympatico.ca &lt;j=
+ohnorange@sympatico.ca&gt; <br><b>Sent:</b> Wednesday, February 21, 2024 2:=
+42 PM<br><b>To:</b> 'charles.grant@cwgrant.ca' &lt;charles.grant@cwgrant.ca=
+&gt;; 'Fran=E7ois Decarie' &lt;frank.decarie@gmail.com&gt;<br><b>Subject:</=
+b> updated patent application<o:p></o:p></span></p></div></div><p class=3D"=
+MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal">Hi there, here is th=
+e updated patent application for your review and feedback. &nbsp;The purpos=
+e of this is to describe to &#8220;an unimaginative technician skilled in t=
+he art&#8221; how to implement your system. That is why I have referenced c=
+ertain source functions so there is sufficient guidance to get the pieces n=
+eeded to put the system together.<o:p></o:p></p><p class=3D"MsoNormal"><o:p=
+>&nbsp;</o:p></p><p class=3D"MsoNormal">I have tried to reconcile different=
+ terminology between for example fig 7, 8 and the paper on the scale and ha=
+ve included items when in doubt so as not to overlook them. An error is mor=
+e readily seen than an omission.<o:p></o:p></p><p class=3D"MsoNormal"><o:p>=
+&nbsp;</o:p></p><p class=3D"MsoNormal">Can you review and then we can discu=
+ss and finalise. I am about tomorrow except for an early pm meeting. <o:p><=
+/o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal"=
+>Regards<o:p></o:p></p></div></body></html>=
+
+------=_NextPart_000_0062_01DA6579.D4DE5640--
