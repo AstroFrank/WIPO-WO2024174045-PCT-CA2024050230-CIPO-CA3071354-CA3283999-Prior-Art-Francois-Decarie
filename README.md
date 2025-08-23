@@ -9,7 +9,7 @@ Unbeknownst to François until recently August 2025, Dr. Grant had previously fi
 https://cipo.ic.gc.ca/opic-cipo/cpd/eng/patent/3071354/summary.html?query=charles+grant&type=basic_search
 
 Previous Claims:
-2D images and Algorithms for Predicting Carcass Lean Yields for Live Feeder Pigs and for Body Condition Scoring Breeder Sows
+From Previous application:"2D images and Algorithms for Predicting Carcass Lean Yields for Live Feeder Pigs and for Body Condition Scoring Breeder Sows
 Claims
 
 A system and method of using 2D images of live feeder pigs and algorithms to predict carcass lean yields to allow adjustments in rations to optimize carcass lean yield.
@@ -18,7 +18,7 @@ A system and method whereby 2D images of feeder pigs are captured.
 A system and method whereby the 2D images are transferred to an in-barn computer where data is extracted from the images.
 A system and method whereby the image data is transferred to a central server located off-site.
 A system and method whereby, at the server, the carcass lean yield predictions of feeder pigs and body condition scoring of gestating sows are calculated.
-A system and method whereby reports of the predicted carcass lean yields and body conditions of gestating sows are transferred to mobile phones for the use of barn and slaughter plant managers.CA 3071354 2020-02-06
+A system and method whereby reports of the predicted carcass lean yields and body conditions of gestating sows are transferred to mobile phones for the use of barn and slaughter plant managers.CA 3071354 2020-02-06"
 
 Dr. Grant's background is in agricultural business, actuarial accounting, insurance sales and certainly not in computer programming. His previous patent application was abandoned because he failed to develop the invention. When François became involved in the fall of 2022, François took the lead on all technical matters, while Dr. Grant facilitated barn visits and ordering material specified by François. Samples of relevant chat messages, images, videos are provided, in which the metadata can verify the dates of those messages. Note that some messages have been severed to avoid publicly disclosing personal health information and references to minors. 
 
