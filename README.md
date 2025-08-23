@@ -4,9 +4,7 @@ This page describes the Prior Art created by François Decarie before 24 Feb 202
 
 François Decarie is a PhD student at the University of Manitoba, after serving 22 years in the Canadian Armed Forces. François met Dr. Grant (a senior instructor at the University of Manitoba) through a mutual friend in 2022, and with François' previous Master of Computer Science and personal experience with artificial intelligence, electro-optical systems and the IoT, began working with Dr. Grant informally on a system for accurately weighing pigs in a barn setting. Throughout 2022 and 2023, François' work inspired him, at Dr. Grant's suggestion, to enroll at the University of Manitoba and use the work he had already completed with Dr. Grant for his PhD. Although not known to François at the time, it became clear that Dr. Grant's ulterior motive was to use the University of Manitoba's Collaborative Research Agreement process to assign François' IP to a hastely incorporated company that Dr. Grant co-owns, thereby circumventing the need to recognize François' work.
 
-Unbeknownst to François until recently August 2025, Dr. Grant had previously filed a patent application CA3071354 in 2018 with claims that have since been abandoned. 
-
-https://cipo.ic.gc.ca/opic-cipo/cpd/eng/patent/3071354/summary.html?query=charles+grant&type=basic_search
+Unbeknownst to François until recently August 2025, Dr. Grant had previously filed a patent application CA3071354 in 2018 with claims that have since been abandoned. <a href="https://cipo.ic.gc.ca/opic-cipo/cpd/eng/patent/3071354/summary.html?query=charles+grant&type=basic_search"> Abandoned CIPO Application. </a>
 
 Previous Claims:
 From Previous application:"2D images and Algorithms for Predicting Carcass Lean Yields for Live Feeder Pigs and for Body Condition Scoring Breeder Sows
