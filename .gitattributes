@@ -12,3 +12,4 @@
 *.pdf  -text
 *.docx -text
 *.xlsx -text
+EOF
