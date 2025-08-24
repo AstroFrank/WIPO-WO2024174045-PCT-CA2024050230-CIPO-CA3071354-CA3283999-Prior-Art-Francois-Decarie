@@ -1,14 +1,25 @@
-*.png filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
-*.tif filter=lfs diff=lfs merge=lfs -text
-*.tiff filter=lfs diff=lfs merge=lfs -text
-*.heic filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*.mkv filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.webp filter=lfs diff=lfs merge=lfs -text
-*.mov filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
 *.pdf  -text
 *.docx -text
 *.xlsx -text
+*.jpg  -text
+*.jpeg -text
+*.png  -text
+*.gif  -text
+*.webp -text
+*.mp4  -text
+*.mov  -text
+*.mkv  -text
+*.tif  -text
+*.tiff -text
+*.heic -text
+*.jpg  -text
+*.jpeg -text
+*.png  -text
+*.gif  -text
+*.webp -text
+*.mp4  -text
+*.mov  -text
+*.mkv  -text
+*.tif  -text
+*.tiff -text
+*.heic -text
